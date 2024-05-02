@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-04-30T11:28:37.115Z",
+        "start_timestamp": "2024-05-02T14:16:01.222Z",
         "line": 5,
         "name": "Validate CSS properties",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12849126600,
+              "duration": 10803314900,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 7244819000,
+              "duration": 7631619600,
               "status": "passed"
             },
             "line": 7,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 1496085800,
+              "duration": 579266800,
               "status": "passed"
             },
             "line": 8,
@@ -105,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 1072773400,
+              "duration": 135736700,
               "status": "passed"
             },
             "line": 17,
@@ -179,7 +179,7 @@
           },
           {
             "result": {
-              "duration": 230406900,
+              "duration": 115480800,
               "status": "passed"
             },
             "line": 27,
@@ -253,7 +253,7 @@
           },
           {
             "result": {
-              "duration": 251466800,
+              "duration": 156620700,
               "status": "passed"
             },
             "line": 37,
@@ -327,7 +327,7 @@
           },
           {
             "result": {
-              "duration": 272134100,
+              "duration": 164028000,
               "status": "passed"
             },
             "line": 47,
@@ -401,7 +401,7 @@
           },
           {
             "result": {
-              "duration": 291880700,
+              "duration": 182369300,
               "status": "passed"
             },
             "line": 57,
@@ -469,7 +469,7 @@
           },
           {
             "result": {
-              "duration": 349868900,
+              "duration": 178282400,
               "status": "passed"
             },
             "line": 66,
@@ -549,7 +549,7 @@
           },
           {
             "result": {
-              "duration": 60398800,
+              "duration": 43377600,
               "status": "passed"
             },
             "line": 77,
@@ -629,7 +629,7 @@
           },
           {
             "result": {
-              "duration": 7118676200,
+              "duration": 7571947400,
               "status": "passed"
             },
             "line": 88,
@@ -709,7 +709,7 @@
           },
           {
             "result": {
-              "duration": 1284560500,
+              "duration": 180525800,
               "status": "passed"
             },
             "line": 99,

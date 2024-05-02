@@ -31,7 +31,7 @@ public class stepdef {
 	public static String fetch(String str) throws IOException {
 		try {
 			FileReader fr = new FileReader(
-					"C:\\Users\\hemanth.koppada\\Documents\\Automation\\Automation_Project\\src\\test\\resources\\configFiles\\xpath.properties");
+					"C:\\Users\\hemanth.koppada\\git\\Automation_Framework_Local_Repo\\Automation_Project\\src\\test\\resources\\configFiles\\xpath.properties");
 			Properties p = new Properties();
 			p.load(fr);
 			String s = p.getProperty(str);
