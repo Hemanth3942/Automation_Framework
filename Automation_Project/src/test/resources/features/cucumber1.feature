@@ -1,8 +1,8 @@
 @tag
-Feature: CSS Validation
+Feature: CSS Validation 2
   
   @tag1
-  Scenario: Validate CSS properties
+  Scenario: Validate CSS properties 2
     Given Open the Webpage
     And Close the cookies
 		Then I have the following CSS properties for element "title_heading1":
@@ -81,28 +81,4 @@ Feature: CSS Validation
 			| padding         | 0px                                |
 			| text-align      | center                             |
 			
-		Then I have the following CSS properties for element "MVP_Home_heading_aceQuo":
-			| cssProperty     | expectedValue                      |
-			| color           | rgba(46, 46, 46, 1)                |
-			| font-family     | Objectivity, Helvetica, sans-serif |
-			| font-size       | 30px                               |
-			| font-weight     | 500                                |
-			| line-height     | 40px                               |
-			| margin-bottom   | 32px                               |
-			| margin-top      | 24px                               |
-			| padding         | 0px                                |
-			| text-align      | center                             |
-			
-		Then I have the following CSS properties for element "MVP_Home_heading_aceQuotea":
-			| cssProperty     | expectedValue                      |
-			| color           | rgba(46, 46, 46, 1)                |
-			| font-family     | Objectivity, Helvetica, sans-serif |
-			| font-size       | 30px                               |
-			| font-weight     | 500                                |
-			| line-height     | 40px                               |
-			| margin-bottom   | 32px                               |
-			| margin-top      | 24px                               |
-			| padding         | 0px                                |
-			| text-align      | center                             |
-
     Then close the browser

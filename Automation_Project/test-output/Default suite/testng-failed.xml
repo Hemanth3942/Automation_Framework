@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.runner.TestRunner">
+      <class name="com.test.stepdefinition.stepdef">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="waitfor"/>
+          <include name="clickifpresent"/>
+          <include name="i_have_the_following_css_properties_for_element"/>
+          <include name="close_the_browser"/>
         </methods>
-      </class> <!-- com.test.runner.TestRunner -->
+      </class> <!-- com.test.stepdefinition.stepdef -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

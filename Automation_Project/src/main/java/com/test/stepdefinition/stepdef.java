@@ -13,6 +13,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -23,10 +25,12 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
+@Test
 public class stepdef {
 	WebDriver driver;
 	ExtentSparkReporter htmlReporter = new ExtentSparkReporter("extent.html");
 	ExtentReports extent = new ExtentReports();
+	ExtentTest test;
 
 	public static String fetch(String str) throws IOException {
 		try {
@@ -44,10 +48,9 @@ public class stepdef {
 
 	public void waitfor(String str) throws IOException {
 		try {
-		WebDriverWait wait = new WebDriverWait(driver, 7);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(fetch(str))));
-		}
-		catch(Exception e) {
+			WebDriverWait wait = new WebDriverWait(driver, 7);
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(fetch(str))));
+		} catch (Exception e) {
 			System.out.println("XPATH NOT FOUND: " + e.getMessage());
 		}
 	}
@@ -57,7 +60,7 @@ public class stepdef {
 			waitfor(str);
 			driver.findElement(By.xpath(fetch(str))).click();
 		} catch (Exception e) {
-			System.out.println("Click Action Failed: "+ str +" "+ e.getMessage());
+			System.out.println("Click Action Failed: " + str + " " + e.getMessage());
 		}
 	}
 
@@ -86,52 +89,48 @@ public class stepdef {
 	@Then("I have the following CSS properties for element {string}:")
 	public void i_have_the_following_css_properties_for_element(String xpath, DataTable dataTable) throws IOException {
 		xpath = xpath + ".XPATH";
-
 		waitfor(xpath);
 		extent.attachReporter(htmlReporter);
-
+		if (test == null) {
+			test = extent.createTest(driver.getTitle(), "");
+		}
 		String logTitle = xpath.replace(".XPATH", "");
 
-		ExtentTest test = extent.createTest(logTitle, "");
+		ExtentTest subtest = test.createNode(logTitle, "");
 
-//	    test.log(Status.INFO, "Validating " + logTitle);
 		try {
-		WebElement webElement = driver.findElement(By.xpath(fetch(xpath)));
-		
-		List<Map<String, String>> cssProperties = dataTable.asMaps(String.class, String.class);
+			WebElement webElement = driver.findElement(By.xpath(fetch(xpath)));
 
-		for (Map<String, String> row : cssProperties) {
-			String cssName = row.get("cssProperty");
-			String expectedValue = row.get("expectedValue");
-			String actualValue = webElement.getCssValue(cssName);
-			if (actualValue.equals(expectedValue)) {
-				System.out.println(
-						"Passed || " + cssName + " || Expected : " + expectedValue + " || Actual : " + actualValue);
-				test.log(Status.PASS,
-						"Passed || " + cssName + " || Expected : " + expectedValue + " || Actual : " + actualValue);
-			} else {
-				System.out.println(
-						"Failed || " + cssName + " || Expected : " + expectedValue + " || Actual : " + actualValue);
-				test.log(Status.FAIL,
-						"Failed || " + cssName + " || Expected : " + expectedValue + " || Actual : " + actualValue);
+			List<Map<String, String>> cssProperties = dataTable.asMaps(String.class, String.class);
+
+			for (Map<String, String> row : cssProperties) {
+				String cssName = row.get("cssProperty");
+				String expectedValue = row.get("expectedValue");
+				String actualValue = webElement.getCssValue(cssName);
+				if (actualValue.equals(expectedValue)) {
+					System.out.println(
+							"Passed || " + cssName + " || Expected : " + expectedValue + " || Actual : " + actualValue);
+					subtest.log(Status.PASS,
+							"Passed || " + cssName + " || Expected : " + expectedValue + " || Actual : " + actualValue);
+				} else {
+					System.out.println(
+							"Failed || " + cssName + " || Expected : " + expectedValue + " || Actual : " + actualValue);
+					subtest.log(Status.FAIL,
+							"Failed || " + cssName + " || Expected : " + expectedValue + " || Actual : " + actualValue);
+				}
 			}
-		}
-		System.out.println(
-				"---------------------------------------------------------------------------------------------------------------------");
-		test.pass("Done");
-		extent.flush();
-		}
-		catch (Exception e) {
-//			test.log(Status.SKIP,"Element not found : "+ xpath +" "+ e.getMessage());
+			System.out.println(
+					"---------------------------------------------------------------------------------------------------------------------");
+			subtest.pass("Done");
+		} catch (Exception e) {
 			String error = e.getClass().getSimpleName();
-			if(error.equals("IllegalArgumentException")) {
-				test.log(Status.ERROR,"xpath not found : "+ xpath +" "+ e.getClass().getSimpleName());
-				extent.flush();
+			if (error.equals("IllegalArgumentException")) {
+				subtest.log(Status.ERROR, "xpath not found : " + xpath + " " + e.getClass().getSimpleName());
+			} else if (error.equals("NoSuchElementException")) {
+				subtest.log(Status.ERROR, "Element not found in page: " + xpath + " " + e.getClass().getSimpleName());
 			}
-			else if(error.equals("NoSuchElementException")) {
-				test.log(Status.ERROR,"Element not found in page: "+ xpath +" "+ e.getClass().getSimpleName());
-				extent.flush();
-			}
+		} finally {
+			extent.flush();
 		}
 	}
 

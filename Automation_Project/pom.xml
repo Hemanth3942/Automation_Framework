@@ -104,40 +104,17 @@
 			<version>5.8.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
-			<version>4.1.5</version> <!-- Use the latest version available -->
+			<version>4.1.5</version>
 		</dependency>
-
-		<!--
-		https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
 
 	</dependencies>
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>net.masterthought</groupId>
-				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>5.8.0</version>
-				<executions>
-					<execution>
-						<id>execution</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-						<configuration>
-							<projectName>AutomateProject</projectName>
-							<outputDirectory>
-								${project.build.directory}/hemanth-cucumber-reports</outputDirectory>
-							<cucumberOutput>
-								${project.build.directory}/cucumber-reports</cucumberOutput>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
 </project>
