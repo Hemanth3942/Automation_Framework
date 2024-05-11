@@ -2,6 +2,9 @@ package com.test.stepdefinition;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -13,7 +16,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -27,15 +29,22 @@ import io.cucumber.java.en.Then;
 
 @Test
 public class stepdef {
+	
+	LocalDateTime currentDateTime = LocalDateTime.now();
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd_MM_yy_HH_mm_ss");
+    DateTimeFormatter date = DateTimeFormatter.ofPattern("dd_MM_yy");
+    String formattedDateTime = currentDateTime.format(formatter);
+    String formattedDate = currentDateTime.format(date);
+	
 	WebDriver driver;
-	ExtentSparkReporter htmlReporter = new ExtentSparkReporter("extent.html");
+	ExtentSparkReporter htmlReporter = new ExtentSparkReporter("./reports/reports("+formattedDate+")/ExtentReport-"+ formattedDateTime +".html");
 	ExtentReports extent = new ExtentReports();
 	ExtentTest test;
 
 	public static String fetch(String str) throws IOException {
 		try {
 			FileReader fr = new FileReader(
-					"C:\\Users\\hemanth.koppada\\git\\Automation_Framework_Local_Repo\\Automation_Project\\src\\test\\resources\\configFiles\\xpath.properties");
+					".\\src\\test\\resources\\configFiles\\xpath.properties");
 			Properties p = new Properties();
 			p.load(fr);
 			String s = p.getProperty(str);
@@ -77,7 +86,19 @@ public class stepdef {
 			driver = new EdgeDriver();
 			driver.manage().window().maximize();
 			driver.get(fetch("url"));
+		} else if (browser.equalsIgnoreCase("mobile")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
+			ChromeDriver driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			Map<String, Object> deviceMetrics = new HashMap<>();
+			deviceMetrics.put("width", 375);
+			deviceMetrics.put("height", 667);
+			deviceMetrics.put("deviceScaleFactor", 0);
+			deviceMetrics.put("mobile", true);
+//			driver.executeCdpCommand("Emulation.setDeviceMetricsOverride", deviceMetrics);
+			driver.get(fetch("url"));
 		}
+		
 	}
 
 	@Given("Close the cookies")
