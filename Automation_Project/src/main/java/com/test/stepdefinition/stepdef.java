@@ -73,19 +73,19 @@ public class stepdef {
 		}
 	}
 
-	@Given("Open the Webpage")
-	public void open_the_webpage() throws IOException {
+	@Given("Open the Webpage {string}")
+	public void open_the_webpage(String url) throws IOException {
 		String browser = fetch("browser");
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			driver.get(fetch("url"));
+			driver.get(fetch(url));
 		} else if (browser.equalsIgnoreCase("edge")) {
 			System.setProperty("webdriver.edge.driver", "C:\\edgedriver_win64\\msedgedriver.exe");
 			driver = new EdgeDriver();
 			driver.manage().window().maximize();
-			driver.get(fetch("url"));
+			driver.get(fetch(url));
 		} else if (browser.equalsIgnoreCase("mobile")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
 			ChromeDriver driver = new ChromeDriver();
@@ -96,9 +96,8 @@ public class stepdef {
 			deviceMetrics.put("deviceScaleFactor", 0);
 			deviceMetrics.put("mobile", true);
 //			driver.executeCdpCommand("Emulation.setDeviceMetricsOverride", deviceMetrics);
-			driver.get(fetch("url"));
+			driver.get(fetch(url));
 		}
-		
 	}
 
 	@Given("Close the cookies")

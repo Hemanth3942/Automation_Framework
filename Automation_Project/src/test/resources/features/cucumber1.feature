@@ -3,7 +3,7 @@ Feature: CSS Validation 2
   
   @tag1
   Scenario: Validate CSS properties 2
-    Given Open the Webpage
+    Given Open the Webpage "urlMovenpick"
     And Close the cookies
 		Then I have the following CSS properties for element "title_heading1":
 			| cssProperty   | expectedValue                      |

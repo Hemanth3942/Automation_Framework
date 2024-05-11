@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-05-11T07:48:20.896Z",
+        "start_timestamp": "2024-05-11T08:26:12.121Z",
         "line": 5,
         "name": "Validate CSS properties",
         "description": "",
@@ -13,19 +13,25 @@
         "steps": [
           {
             "result": {
-              "duration": 16291876200,
+              "duration": 6205041500,
               "status": "passed"
             },
             "line": 6,
-            "name": "Open the Webpage",
+            "name": "Open the Webpage \"urlMovenpick\"",
             "match": {
-              "location": "com.test.stepdefinition.stepdef.open_the_webpage()"
+              "arguments": [
+                {
+                  "val": "\"urlMovenpick\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.test.stepdefinition.stepdef.open_the_webpage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 7865981900,
+              "duration": 7703424000,
               "status": "passed"
             },
             "line": 7,
@@ -37,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 4153044000,
+              "duration": 1515024900,
               "status": "passed"
             },
             "line": 8,
@@ -105,7 +111,7 @@
           },
           {
             "result": {
-              "duration": 418921000,
+              "duration": 195380200,
               "status": "passed"
             },
             "line": 18,
@@ -179,7 +185,7 @@
           },
           {
             "result": {
-              "duration": 341152500,
+              "duration": 189562100,
               "status": "passed"
             },
             "line": 29,
@@ -253,7 +259,7 @@
           },
           {
             "result": {
-              "duration": 834988100,
+              "duration": 209095500,
               "status": "passed"
             },
             "line": 40,
@@ -327,7 +333,7 @@
           },
           {
             "result": {
-              "duration": 369956500,
+              "duration": 310994800,
               "status": "passed"
             },
             "line": 51,
@@ -401,7 +407,7 @@
           },
           {
             "result": {
-              "duration": 422763100,
+              "duration": 237313700,
               "status": "passed"
             },
             "line": 62,
@@ -469,7 +475,7 @@
           },
           {
             "result": {
-              "duration": 433538200,
+              "duration": 283399700,
               "status": "passed"
             },
             "line": 72,
@@ -549,7 +555,7 @@
           },
           {
             "result": {
-              "duration": 80118600,
+              "duration": 51121100,
               "status": "passed"
             },
             "line": 84,
@@ -629,7 +635,7 @@
           },
           {
             "result": {
-              "duration": 7287819800,
+              "duration": 7442035700,
               "status": "passed"
             },
             "line": 96,
@@ -709,7 +715,7 @@
           },
           {
             "result": {
-              "duration": 1435701000,
+              "duration": 254396600,
               "status": "passed"
             },
             "line": 108,
@@ -750,7 +756,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-05-11T07:49:00.921Z",
+        "start_timestamp": "2024-05-11T08:26:36.749Z",
         "line": 5,
         "name": "Validate CSS properties 2",
         "description": "",
@@ -760,19 +766,25 @@
         "steps": [
           {
             "result": {
-              "duration": 11689771200,
+              "duration": 5476062800,
               "status": "passed"
             },
             "line": 6,
-            "name": "Open the Webpage",
+            "name": "Open the Webpage \"urlMovenpick\"",
             "match": {
-              "location": "com.test.stepdefinition.stepdef.open_the_webpage()"
+              "arguments": [
+                {
+                  "val": "\"urlMovenpick\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.test.stepdefinition.stepdef.open_the_webpage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 7893537400,
+              "duration": 7595428500,
               "status": "passed"
             },
             "line": 7,
@@ -784,7 +796,7 @@
           },
           {
             "result": {
-              "duration": 1456376700,
+              "duration": 1543865900,
               "status": "passed"
             },
             "line": 8,
@@ -852,7 +864,7 @@
           },
           {
             "result": {
-              "duration": 3234501800,
+              "duration": 153617200,
               "status": "passed"
             },
             "line": 18,
@@ -926,7 +938,7 @@
           },
           {
             "result": {
-              "duration": 361649100,
+              "duration": 196631200,
               "status": "passed"
             },
             "line": 29,
@@ -1000,7 +1012,7 @@
           },
           {
             "result": {
-              "duration": 504325400,
+              "duration": 161387400,
               "status": "passed"
             },
             "line": 40,
@@ -1074,7 +1086,7 @@
           },
           {
             "result": {
-              "duration": 461996900,
+              "duration": 198267000,
               "status": "passed"
             },
             "line": 51,
@@ -1148,7 +1160,7 @@
           },
           {
             "result": {
-              "duration": 496794000,
+              "duration": 165046700,
               "status": "passed"
             },
             "line": 62,
@@ -1216,7 +1228,7 @@
           },
           {
             "result": {
-              "duration": 744059300,
+              "duration": 162409000,
               "status": "passed"
             },
             "line": 72,
@@ -1296,7 +1308,7 @@
           },
           {
             "result": {
-              "duration": 796477800,
+              "duration": 297434600,
               "status": "passed"
             },
             "line": 84,
