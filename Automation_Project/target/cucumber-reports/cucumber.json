@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-05-11T07:48:20.896Z",
+        "start_timestamp": "2024-05-17T18:29:51.055Z",
         "line": 5,
         "name": "Validate CSS properties",
         "description": "",
@@ -13,19 +13,25 @@
         "steps": [
           {
             "result": {
-              "duration": 16291876200,
+              "duration": 12260755300,
               "status": "passed"
             },
             "line": 6,
-            "name": "Open the Webpage",
+            "name": "Open the Webpage \"urlMovenpick\"",
             "match": {
-              "location": "com.test.stepdefinition.stepdef.open_the_webpage()"
+              "arguments": [
+                {
+                  "val": "\"urlMovenpick\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.test.stepdefinition.stepdef.open_the_webpage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 7865981900,
+              "duration": 11088236000,
               "status": "passed"
             },
             "line": 7,
@@ -37,11 +43,11 @@
           },
           {
             "result": {
-              "duration": 4153044000,
+              "duration": 4349984000,
               "status": "passed"
             },
             "line": 8,
-            "name": "I have the following CSS properties for element \"title_heading1\":",
+            "name": "I have the following CSS properties for element \"title_heading1\"",
             "match": {
               "arguments": [
                 {
@@ -55,48 +61,56 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "54px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -105,11 +119,11 @@
           },
           {
             "result": {
-              "duration": 418921000,
+              "duration": 348019600,
               "status": "passed"
             },
             "line": 18,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_destination\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_destination\"",
             "match": {
               "arguments": [
                 {
@@ -123,54 +137,63 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "letter-spacing",
+                  "equalsTo",
                   "-0.5px"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "54px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -179,11 +202,11 @@
           },
           {
             "result": {
-              "duration": 341152500,
+              "duration": 289370300,
               "status": "passed"
             },
             "line": 29,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_stays\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_stays\"",
             "match": {
               "arguments": [
                 {
@@ -197,54 +220,63 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "letter-spacing",
+                  "equalsTo",
                   "-0.5px"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "54px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -253,11 +285,11 @@
           },
           {
             "result": {
-              "duration": 834988100,
+              "duration": 271106800,
               "status": "passed"
             },
             "line": 40,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_offers\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_offers\"",
             "match": {
               "arguments": [
                 {
@@ -271,54 +303,63 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "letter-spacing",
+                  "equalsTo",
                   "-0.5px"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "54px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -327,11 +368,11 @@
           },
           {
             "result": {
-              "duration": 369956500,
+              "duration": 264069800,
               "status": "passed"
             },
             "line": 51,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_celebrated\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_celebrated\"",
             "match": {
               "arguments": [
                 {
@@ -345,54 +386,63 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "letter-spacing",
+                  "equalsTo",
                   "-0.5px"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "54px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -401,11 +451,11 @@
           },
           {
             "result": {
-              "duration": 422763100,
+              "duration": 234206300,
               "status": "passed"
             },
             "line": 62,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_foodAndDrink\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_foodAndDrink\"",
             "match": {
               "arguments": [
                 {
@@ -419,48 +469,56 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "36px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -469,11 +527,11 @@
           },
           {
             "result": {
-              "duration": 433538200,
+              "duration": 324345400,
               "status": "passed"
             },
             "line": 72,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_aceQuote\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_aceQuote\"",
             "match": {
               "arguments": [
                 {
@@ -487,60 +545,70 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(46, 46, 46, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "30px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "40px"
                 ]
               },
               {
                 "cells": [
                   "margin-bottom",
+                  "equalsTo",
                   "32px"
                 ]
               },
               {
                 "cells": [
                   "margin-top",
+                  "equalsTo",
                   "24px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -549,11 +617,11 @@
           },
           {
             "result": {
-              "duration": 80118600,
+              "duration": 2613700,
               "status": "passed"
             },
             "line": 84,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_aceQuo\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_aceQuo\"",
             "match": {
               "arguments": [
                 {
@@ -567,60 +635,70 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(46, 46, 46, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "30px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "40px"
                 ]
               },
               {
                 "cells": [
                   "margin-bottom",
+                  "equalsTo",
                   "32px"
                 ]
               },
               {
                 "cells": [
                   "margin-top",
+                  "equalsTo",
                   "24px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -629,11 +707,11 @@
           },
           {
             "result": {
-              "duration": 7287819800,
+              "duration": 10058766200,
               "status": "passed"
             },
             "line": 96,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_aceQuotea\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_aceQuotea\"",
             "match": {
               "arguments": [
                 {
@@ -647,60 +725,70 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(46, 46, 46, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "30px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "40px"
                 ]
               },
               {
                 "cells": [
                   "margin-bottom",
+                  "equalsTo",
                   "32px"
                 ]
               },
               {
                 "cells": [
                   "margin-top",
+                  "equalsTo",
                   "24px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -709,10 +797,100 @@
           },
           {
             "result": {
-              "duration": 1435701000,
+              "duration": 28802877400,
               "status": "passed"
             },
             "line": 108,
+            "name": "validate that element \"MVP_Home_link_callout_1\" clickable and redirect to link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MVP_Home_link_callout_1\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.test.stepdefinition.stepdef.validate_that_element_clickable_and_redirect_to_link(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2677685000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "browser go back",
+            "match": {
+              "location": "com.test.stepdefinition.stepdef.browser_go_back()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3323777400,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "validate that element \"MVP_Home_link_callout_1\" clickable and redirect to link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MVP_Home_link_callout_1\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.test.stepdefinition.stepdef.validate_that_element_clickable_and_redirect_to_link(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2730950700,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "browser go back",
+            "match": {
+              "location": "com.test.stepdefinition.stepdef.browser_go_back()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2704360700,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "validate that element \"MVP_Home_heading_aceQuote\" clickable and redirect to link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MVP_Home_heading_aceQuote\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.test.stepdefinition.stepdef.validate_that_element_clickable_and_redirect_to_link(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 604867800,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "browser go back",
+            "match": {
+              "location": "com.test.stepdefinition.stepdef.browser_go_back()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1483764400,
+              "status": "passed"
+            },
+            "line": 115,
             "name": "close the browser",
             "match": {
               "location": "com.test.stepdefinition.stepdef.close_the_browser()"
@@ -750,7 +928,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-05-11T07:49:00.921Z",
+        "start_timestamp": "2024-05-17T18:31:12.949Z",
         "line": 5,
         "name": "Validate CSS properties 2",
         "description": "",
@@ -760,19 +938,25 @@
         "steps": [
           {
             "result": {
-              "duration": 11689771200,
+              "duration": 8505361200,
               "status": "passed"
             },
             "line": 6,
-            "name": "Open the Webpage",
+            "name": "Open the Webpage \"urlMovenpick\"",
             "match": {
-              "location": "com.test.stepdefinition.stepdef.open_the_webpage()"
+              "arguments": [
+                {
+                  "val": "\"urlMovenpick\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.test.stepdefinition.stepdef.open_the_webpage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 7893537400,
+              "duration": 10741668500,
               "status": "passed"
             },
             "line": 7,
@@ -784,11 +968,11 @@
           },
           {
             "result": {
-              "duration": 1456376700,
+              "duration": 3582647200,
               "status": "passed"
             },
             "line": 8,
-            "name": "I have the following CSS properties for element \"title_heading1\":",
+            "name": "I have the following CSS properties for element \"title_heading1\"",
             "match": {
               "arguments": [
                 {
@@ -802,48 +986,56 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "54px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -852,11 +1044,11 @@
           },
           {
             "result": {
-              "duration": 3234501800,
+              "duration": 185126100,
               "status": "passed"
             },
             "line": 18,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_destination\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_destination\"",
             "match": {
               "arguments": [
                 {
@@ -870,54 +1062,63 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "letter-spacing",
+                  "equalsTo",
                   "-0.5px"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "54px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -926,11 +1127,11 @@
           },
           {
             "result": {
-              "duration": 361649100,
+              "duration": 183023200,
               "status": "passed"
             },
             "line": 29,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_stays\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_stays\"",
             "match": {
               "arguments": [
                 {
@@ -944,54 +1145,63 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "letter-spacing",
+                  "equalsTo",
                   "-0.5px"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "54px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -1000,11 +1210,11 @@
           },
           {
             "result": {
-              "duration": 504325400,
+              "duration": 163215400,
               "status": "passed"
             },
             "line": 40,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_offers\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_offers\"",
             "match": {
               "arguments": [
                 {
@@ -1018,54 +1228,63 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "letter-spacing",
+                  "equalsTo",
                   "-0.5px"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "54px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -1074,11 +1293,11 @@
           },
           {
             "result": {
-              "duration": 461996900,
+              "duration": 165506600,
               "status": "passed"
             },
             "line": 51,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_celebrated\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_celebrated\"",
             "match": {
               "arguments": [
                 {
@@ -1092,54 +1311,63 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "letter-spacing",
+                  "equalsTo",
                   "-0.5px"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "54px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -1148,11 +1376,11 @@
           },
           {
             "result": {
-              "duration": 496794000,
+              "duration": 144885500,
               "status": "passed"
             },
             "line": 62,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_foodAndDrink\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_foodAndDrink\"",
             "match": {
               "arguments": [
                 {
@@ -1166,48 +1394,56 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(140, 115, 67, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "36px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "48px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -1216,11 +1452,11 @@
           },
           {
             "result": {
-              "duration": 744059300,
+              "duration": 195332900,
               "status": "passed"
             },
             "line": 72,
-            "name": "I have the following CSS properties for element \"MVP_Home_heading_aceQuote\":",
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_aceQuote\"",
             "match": {
               "arguments": [
                 {
@@ -1234,60 +1470,70 @@
               {
                 "cells": [
                   "cssProperty",
+                  "operator",
                   "expectedValue"
                 ]
               },
               {
                 "cells": [
                   "color",
+                  "equalsTo",
                   "rgba(46, 46, 46, 1)"
                 ]
               },
               {
                 "cells": [
                   "font-family",
+                  "equalsTo",
                   "Objectivity, Helvetica, sans-serif"
                 ]
               },
               {
                 "cells": [
                   "font-size",
+                  "equalsTo",
                   "30px"
                 ]
               },
               {
                 "cells": [
                   "font-weight",
+                  "equalsTo",
                   "500"
                 ]
               },
               {
                 "cells": [
                   "line-height",
+                  "equalsTo",
                   "40px"
                 ]
               },
               {
                 "cells": [
                   "margin-bottom",
+                  "equalsTo",
                   "32px"
                 ]
               },
               {
                 "cells": [
                   "margin-top",
+                  "equalsTo",
                   "24px"
                 ]
               },
               {
                 "cells": [
                   "padding",
+                  "equalsTo",
                   "0px"
                 ]
               },
               {
                 "cells": [
                   "text-align",
+                  "equalsTo",
                   "center"
                 ]
               }
@@ -1296,10 +1542,190 @@
           },
           {
             "result": {
-              "duration": 796477800,
+              "duration": 2004000,
               "status": "passed"
             },
             "line": 84,
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_aceQuo\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MVP_Home_heading_aceQuo\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.test.stepdefinition.stepdef.i_have_the_following_css_properties_for_element(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "cssProperty",
+                  "operator",
+                  "expectedValue"
+                ]
+              },
+              {
+                "cells": [
+                  "color",
+                  "equalsTo",
+                  "rgba(46, 46, 46, 1)"
+                ]
+              },
+              {
+                "cells": [
+                  "font-family",
+                  "equalsTo",
+                  "Objectivity, Helvetica, sans-serif"
+                ]
+              },
+              {
+                "cells": [
+                  "font-size",
+                  "equalsTo",
+                  "30px"
+                ]
+              },
+              {
+                "cells": [
+                  "font-weight",
+                  "equalsTo",
+                  "500"
+                ]
+              },
+              {
+                "cells": [
+                  "line-height",
+                  "equalsTo",
+                  "40px"
+                ]
+              },
+              {
+                "cells": [
+                  "margin-bottom",
+                  "equalsTo",
+                  "32px"
+                ]
+              },
+              {
+                "cells": [
+                  "margin-top",
+                  "equalsTo",
+                  "24px"
+                ]
+              },
+              {
+                "cells": [
+                  "padding",
+                  "equalsTo",
+                  "0px"
+                ]
+              },
+              {
+                "cells": [
+                  "text-align",
+                  "equalsTo",
+                  "center"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10114333000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "I have the following CSS properties for element \"MVP_Home_heading_aceQuotea\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MVP_Home_heading_aceQuotea\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.test.stepdefinition.stepdef.i_have_the_following_css_properties_for_element(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "cssProperty",
+                  "operator",
+                  "expectedValue"
+                ]
+              },
+              {
+                "cells": [
+                  "color",
+                  "equalsTo",
+                  "rgba(46, 46, 46, 1)"
+                ]
+              },
+              {
+                "cells": [
+                  "font-family",
+                  "equalsTo",
+                  "Objectivity, Helvetica, sans-serif"
+                ]
+              },
+              {
+                "cells": [
+                  "font-size",
+                  "equalsTo",
+                  "30px"
+                ]
+              },
+              {
+                "cells": [
+                  "font-weight",
+                  "equalsTo",
+                  "500"
+                ]
+              },
+              {
+                "cells": [
+                  "line-height",
+                  "equalsTo",
+                  "40px"
+                ]
+              },
+              {
+                "cells": [
+                  "margin-bottom",
+                  "equalsTo",
+                  "32px"
+                ]
+              },
+              {
+                "cells": [
+                  "margin-top",
+                  "equalsTo",
+                  "24px"
+                ]
+              },
+              {
+                "cells": [
+                  "padding",
+                  "equalsTo",
+                  "0px"
+                ]
+              },
+              {
+                "cells": [
+                  "text-align",
+                  "equalsTo",
+                  "center"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 752405100,
+              "status": "passed"
+            },
+            "line": 108,
             "name": "close the browser",
             "match": {
               "location": "com.test.stepdefinition.stepdef.close_the_browser()"
